@@ -10,7 +10,7 @@
   
 }
 
- function currentAccount (firstName, lastName, balance, accountNumber) {
+ function currentAccount (firstName, lastName, balance, accountNumber, accountType) {
   
   bankAccount.call(this,firstName, lastName, balance);
   
@@ -19,7 +19,8 @@
   
   currentAccount.prototype.constructor = currentAccount;
   
-   this.accountNumber = accountNumber;
+   this.accountType = 'Current';
+
   
   if (typeof(this.accountNumber) === 'number') {
     
@@ -39,11 +40,13 @@
 }
 
 
- function savingsAccount(firstName, lastName, balance,accountNumber) {
+ function savingsAccount(firstName, lastName, balance,accountNumber, accountType) {
   
   bankAccount.call(this,firstName, lastName, balance);
   
   this.accountNumber = accountNumber;
+
+  this.accountType = 'Savings';
 
   savingsAccount.prototype = Object.create(bankAccount.prototype);
   
@@ -80,4 +83,8 @@ console.log(newSavingsAccountHolder1);
 var currentAccountHolder = new currentAccount('Laurence', 'Johnson', 200000, 304956849);
 
 console.log(currentAccountHolder);
+
+var currentAccountHolder1 = new currentAccount('Kemi', 'Coker', 200000000, 30458430393);
+
+console.log(currentAccountHolder1);
 
