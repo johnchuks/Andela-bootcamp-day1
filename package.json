@@ -1,0 +1,28 @@
+{
+  "name": "oop",
+  "version": "1.0.0",
+  "description": "Implementation of object oriented programming concepts ",
+  "main": "code/oop_exercise.js",
+  "dependencies": {
+    "jasmine": "^2.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnchuks/Andela-bootcamp-day1.git"
+  },
+  "keywords": [
+    "encapsulation",
+    "abstraction",
+    "inheritance"
+  ],
+  "author": "Johnbosco Ohia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnchuks/Andela-bootcamp-day1/issues"
+  },
+  "homepage": "https://github.com/johnchuks/Andela-bootcamp-day1#readme"
+}
