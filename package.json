@@ -4,7 +4,7 @@
   "description": "Implementation of object oriented programming concepts ",
   "main": "code/oop_exercise.js",
   "dependencies": {
-    "jasmine": "^2.5.3"
+    "jasmine": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
